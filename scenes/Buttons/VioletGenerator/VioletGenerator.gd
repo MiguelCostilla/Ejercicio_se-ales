@@ -12,4 +12,4 @@ func generate_block():
 func _on_VioletGenerator_button_down():
 	var BlockVioletInstance = BlockViolet.instance()
 	add_child(BlockVioletInstance)
-	pass # Replace with function body.
+	pass 
