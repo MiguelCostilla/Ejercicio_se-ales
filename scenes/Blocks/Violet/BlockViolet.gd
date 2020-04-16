@@ -6,4 +6,5 @@ func _ready():
 
 
 func delete_objets():
+	queue_free()
 	pass
