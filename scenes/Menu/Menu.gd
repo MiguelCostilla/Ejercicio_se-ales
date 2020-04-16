@@ -21,3 +21,7 @@ func _on_VioletGenerator_button_down():
 	
 	pass 
 	
+func count_new_instance():
+	instancesCount += 1
+	$CountLabel.text = "cantidad de instancias: " + String(instancesCount)
+	pass
