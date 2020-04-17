@@ -7,7 +7,9 @@ func _ready():
 	$CountLabel.text = INSTANCES_TEXT + String(instancesCount)
 	$RedGenerator.connect("button_down",self,"count_new_instance")
 	$VioletGenerator.connect("button_down",self,"count_new_instance")
+	$Reset.connect("button_down",self,"delete")
 	pass
+	
 
 
 func _on_RedGenerator_button_down():
@@ -22,3 +24,7 @@ func count_new_instance():
 	$CountLabel.text = INSTANCES_TEXT + String(instancesCount)
 	pass
 
+func delete():
+	instancesCount = 0
+	$CountLabel.text = INSTANCES_TEXT + String(instancesCount)
+	pass
